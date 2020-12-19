@@ -1,0 +1,178 @@
+[
+  {
+    "description": "    In order to perform successful Login\n    As a user\n    I want to enter correct username and password",
+    "keyword": "Feature",
+    "name": "Login to production",
+    "line": 1,
+    "id": "login-to-production",
+    "tags": [],
+    "uri": "features\\logintoprod.feature",
+    "elements": [
+      {
+        "id": "login-to-production;in-order-to-verify-login-to-facebook-on-production",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "In order to verify login to facebook on Production",
+        "tags": [
+          {
+            "name": "@prod",
+            "line": 10
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features\\stepDefinitions\\stepDefinitions.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "user navigates to facebook website",
+            "match": {
+              "location": "features\\stepDefinitions\\stepDefinitions.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user validates the homepage title",
+            "match": {
+              "location": "features\\stepDefinitions\\stepDefinitions.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "user entered \"username\" username",
+            "match": {
+              "location": "features\\stepDefinitions\\stepDefinitions.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "user entered \"password\" password",
+            "match": {
+              "location": "features\\stepDefinitions\\stepDefinitions.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Country",
+                      "Code"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "India",
+                      "101"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "USA",
+                      "102"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "UK",
+                      "103"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "user validates the captcha image",
+            "match": {
+              "location": "features\\stepDefinitions\\stepDefinittionProd.js:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "user should \"loginstatus\" successfully logged in",
+            "match": {
+              "location": "features\\stepDefinitions\\stepDefinitions.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "features\\stepDefinitions\\stepDefinitions.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "87.0.4280.88"
+      },
+      "device": "",
+      "platform": {
+        "name": "",
+        "version": ""
+      }
+    }
+  }
+]
